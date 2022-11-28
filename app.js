@@ -4,7 +4,7 @@ const app = express()
 
 app.get('/', function(res, res){
 
-    res.send('utfsmaps.herokuapp.com')
+    res.send(github.com/1natth/UTFSMaps)
 })
 
 const PORT = process.env.PORT || 8000
@@ -15,3 +15,4 @@ app.listen(PORT, function(){
 
     console.log("Servidor UTFSMaps", PORT)
 })
+
