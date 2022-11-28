@@ -16,11 +16,17 @@ exports.init ='/',function(req,res){
     });
 
 }
-app.get('/home.html', function(res, res){
+app.get('/home.html'), function(res, res){
 
     res.setHeader('Content-type', HTML_CONTENT_TYPE);
-    const index=fs.readFile(`${__dirname}/libreria/templates/paginas/home.html`
-)})
+    const index=fs.readFile(`${__dirname}/libreria/templates/paginas/home.html`, (err,data) =>{
+        if(err){
+            console.log("Error en la carga del home.html");
+            res.end("Error en la carga del home.html")
+        }else{
+            res.end(data);
+        }
+})
 
 const PORT = process.env.PORT || 4000
 
