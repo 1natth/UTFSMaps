@@ -18,13 +18,11 @@ exports.init ='/',function(req,res){
 }
 app.get('/', function(req, res){
 
-    res.setHeader('Content-type', HTML_CONTENT_TYPE);
-    const index=fs.readFile('home.html')
+    res.sendFile('index.html')
 })
 app.get('home.html', function(req, res){
 
-    res.setHeader('Content-type', HTML_CONTENT_TYPE);
-    const index=fs.readFile('home.html')
+    res.sendFile('home.html')
 })
 
 const PORT = process.env.PORT || 4000
