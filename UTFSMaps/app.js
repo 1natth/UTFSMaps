@@ -4,7 +4,7 @@ const app = express()
 
 app.get('/', function(res, res){
 
-    res.send(static_cdn/manage.py)
+    res.send(manage.py)
 })
 
 const PORT = process.env.PORT || 8000
