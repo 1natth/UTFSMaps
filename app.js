@@ -17,7 +17,7 @@ exports.init ='/',function(req,res){
 
 }
 app.get('/', (req, res)=> {
-    res.sendFile(__dirname + 'home.html')
+    res.sendFile(__dirname + '/home.html')
 }) 
 
 app.get('*', (req, res)=> {
