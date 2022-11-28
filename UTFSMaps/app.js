@@ -7,7 +7,7 @@ app.get('/', function(res, res){
     res.send(manage.py)
 })
 
-const PORT = process.env.PORT || 8000
+const PORT = process.env.PORT || 4000
 
 console.log({PORT})
 
