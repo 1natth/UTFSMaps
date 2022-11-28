@@ -4,7 +4,7 @@ const app = express()
 
 app.get('/', function(res, res){
 
-    res.send(manage.py)
+    res.sendFile(home.html)
 })
 
 const PORT = process.env.PORT || 4000
