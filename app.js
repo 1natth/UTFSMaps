@@ -4,7 +4,7 @@ const app = express()
 
 app.get('/', function(res, res){
 
-    res.send(github.com/1natth/UTFSMaps/blob/master/libreria/templates/paginas/home.html)
+    res.send(libreria/templates/paginas/home.html)
 })
 
 const PORT = process.env.PORT || 8000
