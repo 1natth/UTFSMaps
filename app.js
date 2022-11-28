@@ -16,7 +16,7 @@ exports.init ='/',function(req,res){
     });
 
 }
-app.get('/home.html'), function(res, res){
+app.get('/home.html'), function(req, res){
 
     res.setHeader('Content-type', HTML_CONTENT_TYPE);
     const index=fs.readFile(`${__dirname}/libreria/templates/paginas/home.html`, (err,data))
