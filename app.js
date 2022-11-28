@@ -6,7 +6,7 @@ const HTML_CONTENT_TYPE="text/html";
 exports.init.get ='/',function(req,res){
     res.statusCode = 200;
     res.setHeader('Content-type', HTML_CONTENT_TYPE);
-    const index=fs.readFile(`${__dirname}/../libreria/templates/paginas/home.html`, (err,data) =>{
+    const index=fs.readFile(`${__dirname}/libreria/templates/paginas/home.html`, (err,data) =>{
         if(err){
             console.log("Error en la carga del home.html");
             res.end("Error en la carga del home.html")
