@@ -4,15 +4,12 @@ const app = express()
 
 app.get('/', function(res, res){
 
-    res.send(home.html)
+    res.send()
 })
 
 const PORT = process.env.PORT || 8000
 
 console.log({PORT})
 
-app.listen(PORT, function(){
-
-    console.log("Servidor UTFSMaps", PORT)
-})
+app.listen(PORT)
 
