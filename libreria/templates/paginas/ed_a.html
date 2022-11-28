@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    {% load static %}
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="{% static 'app/css/bloque.css' %}">
+    <link rel="stylesheet" href="{% static 'app/css/styles.css' %}">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title>Document</title>
+
+    <script src="{% static 'app/js/jquery.js' %}"></script>
+    <script src="{% static 'app/js/jquery.dataTables.min.js' %}"></script>
+
+    <img class="bar" src="{% static 'app/img/barra_hud.png' %}" width=1510 heigth= 2000 alt="barra">
+    <img class="blanco" src="{%static 'app/img/blanco.png' %}" width=1600 height=20 alt="blanco">
+    <img class="hud" src="{% static 'app/img/Hud.png' %}" width=900 heigth= 2000 alt="menu">
+    <a href="http://127.0.0.1:8000/"><img class="hud_2" src="{% static 'app/img/inv.png' %}" width=550 heigth= 2000 alt="menu"></a>
+</head>
+<body>
+    <div class="buscar">
+        <input type="search" id="input-search" class="buscar_texto" placeholder="       &iquest;Qu&eacute; sala buscas?"/>
+        <a href="" class="boton">
+        <i class="icon-buscar"></i>
+        </a>
+        <div class="content-search">
+            <div class="content-table">
+                <table id="table">
+                    <thead>
+                        <tr>
+                            <td></td>
+                        </tr>
+                    </thead>
+    
+                    <tbody>
+                        <tr>
+                            <td><a href="http://127.0.0.1:8000/edificio_a/">Salas A</a></td>
+                        </tr>
+                        <tr>
+                            <td><a href="http://127.0.0.1:8000/edificio_b/">Salas B</a></td>
+                        </tr>
+                        <tr>
+                            <td><a href="http://127.0.0.1:8000/edificio_c/">Salas C</a></td>
+                        </tr>
+                        <tr>
+                            <td><a href="http://127.0.0.1:8000/edificio_e/">Salas E</a></td>
+                        </tr>
+                        <tr>
+                            <td><a href="http://127.0.0.1:8000/edificio_f/">Salas F</a></td>
+                        </tr>
+                        <tr>
+                            <td><a href="http://127.0.0.1:8000/edificio_e/">Edificio E</a></td>
+                        </tr>
+                        <tr>
+                            <td><a href="http://127.0.0.1:8000/edificio_a/">Edificio A</a></td>
+                        </tr>
+                        <tr>
+                            <td><a href="http://127.0.0.1:8000/edificio_b/">Edificio B</a></td>
+                        </tr>
+                        <tr>
+                            <td><a href="http://127.0.0.1:8000/edificio_c/">Edificio C</a></td>
+                        </tr>
+                        <tr>
+                            <td><a href="http://127.0.0.1:8000/edificio_f/">Edificio F</a></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    <a> <img class="piso_1" src="{% static 'app/img/edificioa.png' %}" width="1200" height="600"></a>
+    <button class="inv-bot16" id="btn-abrir-modal16"> A016 </button>
+    <dialog id="modal16">
+        <h2> <img src="{% static 'app/img/boton.png' %}"></h2>
+        <button id="btn-cerrar-modal16"> cerrar modal </button>
+    </dialog>
+    
+    <button class="inv-bot4" id="btn-abrir-modal04"> A004 </button>
+    <dialog id="modal04">
+        <h2> Esta sala se encuentra en la entrada de la Universidad </h2>
+        <button id="btn-cerrar-modal04"> cerrar modal </button>
+    </dialog>
+
+    <button class="inv-bot5" id="btn-abrir-modal05"> A005 </button>
+    <dialog id="modal05">
+        <h2> Esta sala se encuentra en la entrada de la Universidad </h2>
+        <button id="btn-cerrar-modal05"> cerrar modal </button>
+    </dialog>
+
+    <button class="inv-bot6" id="btn-abrir-modal06"> A006 </button>
+    <dialog id="modal06">
+        <h2> Esta sala se encuentra en la entrada de la Universidad </h2>
+        <button id="btn-cerrar-modal06"> cerrar modal </button>
+    </dialog>
+
+    <button class="inv-bot7" id="btn-abrir-modal07"> A007 </button>
+    <dialog id="modal07">
+        <h2> Esta sala se encuentra en la entrada de la Universidad </h2>
+        <button id="btn-cerrar-modal07"> cerrar modal </button>
+    </dialog>
+
+    <button class="inv-bot8" id="btn-abrir-modal08"> A008 </button>
+    <dialog id="modal08">
+        <h2> Esta sala se encuentra en la entrada de la Universidad </h2>
+        <button id="btn-cerrar-modal08"> cerrar modal </button>
+    </dialog>
+
+    <button class="inv-bot9" id="btn-abrir-modal09"> A009 </button>
+    <dialog id="modal09">
+        <h2> Esta sala se encuentra en la entrada de la Universidad </h2>
+        <button id="btn-cerrar-modal09"> cerrar modal </button>
+    </dialog>
+
+    <button class="inv-bot10" id="btn-abrir-modal10"> A010 </button>
+    <dialog id="modal10">
+        <h2> Esta sala se encuentra en la entrada de la Universidad </h2>
+        <button id="btn-cerrar-modal10"> cerrar modal </button>
+    </dialog>
+
+    <button class="inv-bot11" id="btn-abrir-modal11"> A011 </button>
+    <dialog id="modal11">
+        <h2> Esta sala se encuentra en la entrada de la Universidad </h2>
+        <button id="btn-cerrar-modal11"> cerrar modal </button>
+    </dialog>
+
+    <button class="inv-bot12" id="btn-abrir-modal12"> A012 </button>
+    <dialog id="modal12">
+        <h2> Esta sala se encuentra en la entrada de la Universidad </h2>
+        <button id="btn-cerrar-modal12"> cerrar modal </button>
+    </dialog>
+
+    <button class="inv-bot13" id="btn-abrir-modal13"> A013 </button>
+    <dialog id="modal13">
+        <h2> Esta sala se encuentra en la entrada de la Universidad </h2>
+        <button id="btn-cerrar-modal13"> cerrar modal </button>
+    </dialog>
+
+    <button class="inv-bot14" id="btn-abrir-modal14"> A014 </button>
+    <dialog id="modal14">
+        <h2> Esta sala se encuentra en la entrada de la Universidad </h2>
+        <button id="btn-cerrar-modal14"> cerrar modal </button>
+    </dialog>
+
+    <button class="inv-bot15" id="btn-abrir-modal15"> A015 </button>
+    <dialog id="modal15">
+        <h2> Esta sala se encuentra en la entrada de la Universidad </h2>
+        <button id="btn-cerrar-modal15"> cerrar modal </button>
+    </dialog>
+
+    <button class="inv-bot3" id="btn-abrir-modal03"> A003 </button>
+    <dialog id="modal03">
+        <h2> Esta sala se encuentra en la entrada de la Universidad </h2>
+        <button id="btn-cerrar-modal03"> cerrar modal </button>
+    </dialog>
+
+    <button class="inv-bot17" id="btn-abrir-modal17"> A017 </button>
+    <dialog id="modal17">
+        <h2> Esta sala se encuentra en la entrada de la Universidad </h2>
+        <button id="btn-cerrar-modal17"> cerrar modal </button>
+    </dialog>
+
+    <button class="inv-bot1" id="btn-abrir-modal01"> A001 </button>
+    <dialog id="modal01">
+        <h2>Sala A001
+            <p></p> 
+            Descripci&oacute;n: <p></p>
+            Sala ubicada en la zona no techada del edificio A. 
+            Est&aacute; a mano derecha del pasillo para ir al edificio C, 
+            tambi&eacute;n tiene una entrada desde la zona del edificio C.
+            <p></p>
+            Como llegar:
+            <p></p>
+            Ingresando a la universidad desde Vicu&ntilde;a Mackenna, 
+            te diriges derecho hasta salir de la parte techada del edificio A.
+            Sigues derecho tu recorrido hasta toparte con un pasillo a mano izquierda.
+            La sala estar&aacute; a la derecha de tal pasillo.</h2>
+        <button id="btn-cerrar-modal01"> Cerrar descripci&oacute;n </button>
+    </dialog>
+
+    <button class="inv-bot2" id="btn-abrir-modal02"> A002 </button>
+    <dialog id="modal02">
+        <h2> Esta sala se encuentra en la entrada de la Universidad </h2>
+        <button id="btn-cerrar-modal02"> cerrar modal </button>
+    </dialog>
+
+    <script src="{% static 'app/js/search.js' %}"></script>
+    <script src="{% static 'app/js/04.js' %}"></script>
+    <script src="{% static 'app/js/05.js' %}"></script>
+    <script src="{% static 'app/js/03.js' %}"></script>
+    <script src="{% static 'app/js/02.js' %}"></script>
+    <script src="{% static 'app/js/01.js' %}"></script>
+    <script src="{% static 'app/js/07.js' %}"></script>
+    <script src="{% static 'app/js/06.js' %}"></script>
+    <script src="{% static 'app/js/08.js' %}"></script>
+    <script src="{% static 'app/js/09.js' %}"></script>
+    <script src="{% static 'app/js/10.js' %}"></script>
+    <script src="{% static 'app/js/11.js' %}"></script>
+    <script src="{% static 'app/js/12.js' %}"></script>
+    <script src="{% static 'app/js/13.js' %}"></script>
+    <script src="{% static 'app/js/14.js' %}"></script>
+    <script src="{% static 'app/js/15.js' %}"></script>
+    <script src="{% static 'app/js/17.js' %}"></script>
+    <p></p>
+    <a> &copy; Propiedad de UTFSMaps. Derechos reservados unica y exclusivamente para el uso profesional del contenido proporcionado.</a>
+</body>
+</html>

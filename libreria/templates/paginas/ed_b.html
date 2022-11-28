@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    {% load static %}
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="{% static 'app/css/bloque.css' %}">
+    <link rel="stylesheet" href="{% static 'app/css/styles.css' %}">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title>Document</title>
+
+    <script src="{% static 'app/js/jquery.js' %}"></script>
+    <script src="{% static 'app/js/jquery.dataTables.min.js' %}"></script>
+
+    <img class="bar" src="{% static 'app/img/barra_hud.png' %}" width=1510 heigth= 2000 alt="barra">
+    <img class="blanco" src="{%static 'app/img/blanco.png' %}" width=1600 height=20 alt="blanco">
+    <img class="hud" src="{% static 'app/img/Hud.png' %}" width=900 heigth= 2000 alt="menu">
+    <a href="http://127.0.0.1:8000/"><img class="hud_2" src="{% static 'app/img/inv.png' %}" width=550 heigth= 2000 alt="menu"></a>
+</head>
+<body>
+    <div class="buscar">
+        <input type="search" id="input-search" class="buscar_texto" placeholder="       &iquest;Qu&eacute; sala buscas?"/>
+        <a href="" class="boton">
+        <i class="icon-buscar"></i>
+        </a>
+        <div class="content-search">
+            <div class="content-table">
+                <table id="table">
+                    <thead>
+                        <tr>
+                            <td></td>
+                        </tr>
+                    </thead>
+    
+                    <tbody>
+                        <tr>
+                            <td><a href="http://127.0.0.1:8000/edificio_a/">Salas A</a></td>
+                        </tr>
+                        <tr>
+                            <td><a href="http://127.0.0.1:8000/edificio_b/">Salas B</a></td>
+                        </tr>
+                        <tr>
+                            <td><a href="http://127.0.0.1:8000/edificio_c/">Salas C</a></td>
+                        </tr>
+                        <tr>
+                            <td><a href="http://127.0.0.1:8000/edificio_f/">Salas F</a></td>
+                        </tr>
+                        <tr>
+                            <td><a href="http://127.0.0.1:8000/edificio_e/">Salas E</a></td>
+                        </tr>
+                        <tr>
+                            <td><a href="http://127.0.0.1:8000/edificio_e/">Edificio E</a></td>
+                        </tr>
+                        <tr>
+                            <td><a href="http://127.0.0.1:8000/edificio_a/">Edificio A</a></td>
+                        </tr>
+                        <tr>
+                            <td><a href="http://127.0.0.1:8000/edificio_b/">Edificio B</a></td>
+                        </tr>
+                        <tr>
+                            <td><a href="http://127.0.0.1:8000/edificio_c/">Edificio C</a></td>
+                        </tr>
+                        <tr>
+                            <td><a href="http://127.0.0.1:8000/edificio_f/">Edificio F</a></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    <a> <img class="piso_1" src="{% static 'app/img/edificiob.png' %}" width="600" height="725"></a>
+    <a> <img class="piso_2" src="{% static 'app/img/edificiob2.png' %}" width="350" height="417"></a>
+    <a> <img class="piso_-1" src="{% static 'app/img/edificiob3.png' %}" width="350" height="417"></a>
+
+    <button class="inv-botb01" id="btn-abrir-modalb01"> B001 </button>
+    <dialog id="modalb01">
+        <h2> <img src="{% static 'app/img/boton.png' %}"></h2>
+        <button id="btn-cerrar-modalb01"> cerrar modal </button>
+    </dialog>
+
+    <button class="inv-botb02" id="btn-abrir-modalb02"> B002 </button>
+    <dialog id="modalb02">
+        <h2> <img src="{% static 'app/img/boton.png' %}"></h2>
+        <button id="btn-cerrar-modalb02"> cerrar modal </button>
+    </dialog>
+
+    <button class="inv-botb03" id="btn-abrir-modalb03"> B003 </button>
+    <dialog id="modalb03">
+        <h2> <img src="{% static 'app/img/boton.png' %}"></h2>
+        <button id="btn-cerrar-modalb03"> cerrar modal </button>
+    </dialog>
+
+    <button class="inv-botb04" id="btn-abrir-modalb04"> B004 </button>
+    <dialog id="modalb04">
+        <h2> <img src="{% static 'app/img/boton.png' %}"></h2>
+        <button id="btn-cerrar-modalb04"> cerrar modal </button>
+    </dialog>
+
+    <button class="inv-botb05" id="btn-abrir-modalb05"> B005 </button>
+    <dialog id="modalb05">
+        <h2> <img src="{% static 'app/img/boton.png' %}"></h2>
+        <button id="btn-cerrar-modalb05"> cerrar modal </button>
+    </dialog>
+
+    <button class="inv-botb06" id="btn-abrir-modalb06"> B006 </button>
+    <dialog id="modalb06">
+        <h2> <img src="{% static 'app/img/boton.png' %}"></h2>
+        <button id="btn-cerrar-modalb06"> cerrar modal </button>
+    </dialog>
+
+    <button class="inv-botb07" id="btn-abrir-modalb07"> B007 </button>
+    <dialog id="modalb07">
+        <h2> <img src="{% static 'app/img/boton.png' %}"></h2>
+        <button id="btn-cerrar-modalb07"> cerrar modal </button>
+    </dialog>
+
+    <button class="inv-botb08" id="btn-abrir-modalb08"> B008 </button>
+    <dialog id="modalb08">
+        <h2> <img src="{% static 'app/img/boton.png' %}"></h2>
+        <button id="btn-cerrar-modalb08"> cerrar modal </button>
+    </dialog>
+
+    <button class="inv-botb09" id="btn-abrir-modalb09"> B009 </button>
+    <dialog id="modalb09">
+        <h2> <img src="{% static 'app/img/boton.png' %}"></h2>
+        <button id="btn-cerrar-modalb09"> cerrar modal </button>
+    </dialog>
+
+    <button class="inv-botb10" id="btn-abrir-modalb10"> B010 </button>
+    <dialog id="modalb10">
+        <h2> <img src="{% static 'app/img/boton.png' %}"></h2>
+        <button id="btn-cerrar-modalb10"> cerrar modal </button>
+    </dialog>
+
+    <button class="inv-botb11" id="btn-abrir-modalb11"> B011 </button>
+    <dialog id="modalb11">
+        <h2> <img src="{% static 'app/img/boton.png' %}"></h2>
+        <button id="btn-cerrar-modalb11"> cerrar modal </button>
+    </dialog>
+
+    <button class="inv-botb12" id="btn-abrir-modalb12"> B012 </button>
+    <dialog id="modalb12">
+        <h2> <img src="{% static 'app/img/boton.png' %}"></h2>
+        <button id="btn-cerrar-modalb12"> cerrar modal </button>
+    </dialog>
+
+    <button class="inv-botb14" id="btn-abrir-modalb14"> B014 </button>
+    <dialog id="modalb14">
+        <h2> <img src="{% static 'app/img/boton.png' %}"></h2>
+        <button id="btn-cerrar-modalb14"> cerrar modal </button>
+    </dialog>
+
+    <button class="inv-botb15" id="btn-abrir-modalb15"> B015 </button>
+    <dialog id="modalb15">
+        <h2> <img src="{% static 'app/img/boton.png' %}"></h2>
+        <button id="btn-cerrar-modalb15"> cerrar modal </button>
+    </dialog>
+
+    <button class="inv-botb31" id="btn-abrir-modalb31"> B031 </button>
+    <dialog id="modalb31">
+        <h2> <img src="{% static 'app/img/boton.png' %}"></h2>
+        <button id="btn-cerrar-modalb31"> cerrar modal </button>
+    </dialog>
+
+    <button class="inv-botb33" id="btn-abrir-modalb33"> B033 </button>
+    <dialog id="modalb33">
+        <h2> <img src="{% static 'app/img/boton.png' %}"></h2>
+        <button id="btn-cerrar-modalb33"> cerrar modal </button>
+    </dialog>
+
+    <button class="inv-botb35" id="btn-abrir-modalb35"> B035 </button>
+    <dialog id="modalb35">
+        <h2> <img src="{% static 'app/img/boton.png' %}"></h2>
+        <button id="btn-cerrar-modalb35"> cerrar modal </button>
+    </dialog>
+
+    <button class="inv-botb37" id="btn-abrir-modalb37"> B037 </button>
+    <dialog id="modalb37">
+        <h2> <img src="{% static 'app/img/boton.png' %}"></h2>
+        <button id="btn-cerrar-modalb37"> cerrar modal </button>
+    </dialog>
+
+    <button class="inv-botb39" id="btn-abrir-modalb39"> B039 </button>
+    <dialog id="modalb39">
+        <h2> <img src="{% static 'app/img/boton.png' %}"></h2>
+        <button id="btn-cerrar-modalb39"> cerrar modal </button>
+    </dialog>
+
+    <button class="inv-botb49a" id="btn-abrir-modalb49a"> B049(a) </button>
+    <dialog id="modalb49a">
+        <h2> <img src="{% static 'app/img/boton.png' %}"></h2>
+        <button id="btn-cerrar-modalb49a"> cerrar modal </button>
+    </dialog>
+
+    <button class="inv-botb49b" id="btn-abrir-modalb49b"> B049(b) </button>
+    <dialog id="modalb49b">
+        <h2> <img src="{% static 'app/img/boton.png' %}"></h2>
+        <button id="btn-cerrar-modalb49b"> cerrar modal </button>
+    </dialog>
+
+    <button class="inv-botb389" id="btn-abrir-modalb389"> B389 </button>
+    <dialog id="modalb389">
+        <h2> <img src="{% static 'app/img/boton.png' %}"></h2>
+        <button id="btn-cerrar-modalb389"> cerrar modal </button>
+    </dialog>
+
+    <button class="inv-botb344" id="btn-abrir-modalb344"> B344 </button>
+    <dialog id="modalb344">
+        <h2> <img src="{% static 'app/img/boton.png' %}"></h2>
+        <button id="btn-cerrar-modalb344"> cerrar modal </button>
+    </dialog>
+
+    <button class="inv-botb21" id="btn-abrir-modalb21"> B021 </button>
+    <dialog id="modalb21">
+        <h2> <img src="{% static 'app/img/boton.png' %}"></h2>
+        <button id="btn-cerrar-modalb21"> cerrar modal </button>
+    </dialog>
+
+    <button class="inv-botb22" id="btn-abrir-modalb22"> B022 </button>
+    <dialog id="modalb22">
+        <h2> <img src="{% static 'app/img/boton.png' %}"></h2>
+        <button id="btn-cerrar-modalb22"> cerrar modal </button>
+    </dialog>
+
+    <button class="inv-botb23" id="btn-abrir-modalb23"> Arquitectura <p></p> B023 </button>
+    <dialog id="modalb23">
+        <h2> <img src="{% static 'app/img/boton.png' %}"></h2>
+        <button id="btn-cerrar-modalb23"> cerrar modal </button>
+    </dialog>
+
+    <button class="inv-botb64" id="btn-abrir-modalb64"> B064 </button>
+    <dialog id="modalb64">
+        <h2> <img src="{% static 'app/img/boton.png' %}"></h2>
+        <button id="btn-cerrar-modalb64"> cerrar modal </button>
+    </dialog>
+
+    <button class="inv-botb65" id="btn-abrir-modalb65"> B065 </button>
+    <dialog id="modalb65">
+        <h2> <img src="{% static 'app/img/boton.png' %}"></h2>
+        <button id="btn-cerrar-modalb65"> cerrar modal </button>
+    </dialog>
+    
+    <button class="inv-botb114" id="btn-abrir-modalb114"> B114 </button>
+    <dialog id="modalb114">
+        <h2> <img src="{% static 'app/img/boton.png' %}"></h2>
+        <button id="btn-cerrar-modalb114"> cerrar modal </button>
+    </dialog>
+
+    <button class="inv-botb115" id="btn-abrir-modalb115"> B115 </button>
+    <dialog id="modalb115">
+        <h2> <img src="{% static 'app/img/boton.png' %}"></h2>
+        <button id="btn-cerrar-modalb115"> cerrar modal </button>
+    </dialog>
+    
+    <button class="inv-botb201" id="btn-abrir-modalb201"> B201 </button>
+    <dialog id="modalb201">
+        <h2> <img src="{% static 'app/img/boton.png' %}"></h2>
+        <button id="btn-cerrar-modalb201"> cerrar modal </button>
+    </dialog>
+    
+    <button class="inv-botb202" id="btn-abrir-modalb202"> B202 </button>
+    <dialog id="modalb202">
+        <h2> <img src="{% static 'app/img/boton.png' %}"></h2>
+        <button id="btn-cerrar-modalb202"> cerrar modal </button>
+    </dialog>
+    
+    <button class="inv-botb203" id="btn-abrir-modalb203"> B203 </button>
+    <dialog id="modalb203">
+        <h2> <img src="{% static 'app/img/boton.png' %}"></h2>
+        <button id="btn-cerrar-modalb203"> cerrar modal </button>
+    </dialog>
+
+    <script src="{% static 'app/js/search.js' %}"></script>
+    <script src="{% static 'app/js/b01.js' %}"></script>
+    <script src="{% static 'app/js/b02.js' %}"></script>
+    <script src="{% static 'app/js/b03.js' %}"></script>
+    <script src="{% static 'app/js/b04.js' %}"></script>
+    <script src="{% static 'app/js/b05.js' %}"></script>
+    <script src="{% static 'app/js/b06.js' %}"></script>
+    <script src="{% static 'app/js/b07.js' %}"></script>
+    <script src="{% static 'app/js/b08.js' %}"></script>
+    <script src="{% static 'app/js/b09.js' %}"></script>
+    <script src="{% static 'app/js/b10.js' %}"></script>
+    <script src="{% static 'app/js/b11.js' %}"></script>
+    <script src="{% static 'app/js/b12.js' %}"></script>
+    <script src="{% static 'app/js/b14.js' %}"></script>
+    <script src="{% static 'app/js/b15.js' %}"></script>
+    <script src="{% static 'app/js/b21.js' %}"></script>
+    <script src="{% static 'app/js/b22.js' %}"></script>
+    <script src="{% static 'app/js/b23.js' %}"></script>
+    <script src="{% static 'app/js/b31.js' %}"></script>
+    <script src="{% static 'app/js/b33.js' %}"></script>
+    <script src="{% static 'app/js/b35.js' %}"></script>
+    <script src="{% static 'app/js/b37.js' %}"></script>
+    <script src="{% static 'app/js/b39.js' %}"></script>
+    <script src="{% static 'app/js/b49a.js' %}"></script>
+    <script src="{% static 'app/js/b49b.js' %}"></script>
+    <script src="{% static 'app/js/b64.js' %}"></script>
+    <script src="{% static 'app/js/b65.js' %}"></script>
+    <script src="{% static 'app/js/b114.js' %}"></script>
+    <script src="{% static 'app/js/b115.js' %}"></script>
+    <script src="{% static 'app/js/b201.js' %}"></script>
+    <script src="{% static 'app/js/b202.js' %}"></script>
+    <script src="{% static 'app/js/b203.js' %}"></script>
+    <script src="{% static 'app/js/b344.js' %}"></script>
+    <script src="{% static 'app/js/b389.js' %}"></script>
+
+    <p></p>
+    <a> &copy; Propiedad de UTFSMaps. Derechos reservados unica y exclusivamente para el uso profesional del contenido proporcionado.</a>
+</body>
+</html>

@@ -1,0 +1,1 @@
+web: gunicorn utfsmaps.wsgi --log-file -
