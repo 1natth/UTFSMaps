@@ -4,13 +4,12 @@
     "authors": "Nathan Cepeda",
     "version": "1.0.0",
     "engines":{
-        "node": "18.x"
+        "node": "18.12.1"
     },
     "main": "app.js",
     "scripts": {
         "dev": "nodemon app",
-        "start": "node index.js",
-        "build": "webpack"
+        "start": "node index.js"
     },
     "dependencies": {
         "express": "^4.17.1",
