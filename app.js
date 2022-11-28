@@ -4,7 +4,7 @@ const app = express()
 
 app.get('/', function(res, res){
 
-    res.send(libreria/templates/paginas/home.html)
+    res.send(home.html)
 })
 
 const PORT = process.env.PORT || 8000
