@@ -16,13 +16,12 @@ exports.init ='/',function(req,res){
     });
 
 }
-app.get('/', function(req, res){
+app.get('/', (req, res)=> {
+    res.sendFile(__dirname + 'home.html')
+}) 
 
-    res.sendFile('index.html')
-})
-app.get('home.html', function(req, res){
-
-    res.sendFile('home.html')
+app.get('*', (req, res)=> {
+    res.redirect('/')
 })
 
 const PORT = process.env.PORT || 4000
