@@ -6,7 +6,7 @@ const HTML_CONTENT_TYPE="text/html";
 exports.init ='/',function(req,res){
     res.statusCode = 200;
     res.setHeader('Content-type', HTML_CONTENT_TYPE);
-    const index=fs.readFile(`${__dirname}/libreria/templates/paginas/home.html`, (err,data) =>{
+    const index=fs.readFile(`${__dirname}/../libreria/templates/paginas/home.html`, (err,data) =>{
         if(err){
             console.log("Error en la carga del home.html");
             res.end("Error en la carga del home.html")
@@ -16,11 +16,10 @@ exports.init ='/',function(req,res){
     });
 
 }
-app.get('/home.html'), function(req, res){
+app.get('/', function(res, res){
 
-    res.setHeader('Content-type', HTML_CONTENT_TYPE);
-    const index=fs.readFile(`${__dirname}/libreria/templates/paginas/home.html`, (err,data))
-    };
+    res.send('Hola')
+})
 
 const PORT = process.env.PORT || 4000
 
