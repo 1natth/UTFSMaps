@@ -825,29 +825,29 @@ tbody tr td a:hover{
     background: #C04BFF;
     border: none;
     position: absolute;
-    margin-top: 350px;
+    margin-top: 245px;
     z-index: 15;
-    margin-left: 785px;
-    font-size: large;
+    margin-left: 550px;
+    font-size: x-large;
     font-weight: bolder;
 }
 .inv-bote202{
     background: #C04BFF;
     border: none;
     position: absolute;
-    margin-top: 350px;
+    margin-top: 245px;
     z-index: 15;
-    margin-left: 785px;
-    font-size: large;
+    margin-left: 635px;
+    font-size: x-large;
     font-weight: bolder;
 }
 .inv-bote203{
     background: #C04BFF;
     border: none;
     position: absolute;
-    margin-top: 350px;
+    margin-top: 245px;
     z-index: 15;
-    margin-left: 785px;
+    margin-left: 715px;
     font-size: x-large;
     font-weight: bolder;
 }
@@ -988,6 +988,36 @@ tbody tr td a:hover{
     margin-top: 845px;
     z-index: 15;
     margin-left: 430px;
+    font-size: large;
+    font-weight: bolder;
+}
+.inv-botqr{
+    background: none;
+    border: none;
+    position: absolute;
+    margin-top: 582px;
+    z-index: 15;
+    margin-left: 92px;
+    font-size: large;
+    font-weight: bolder;
+}
+.inv-botqr2{
+    background: none;
+    border: none;
+    position: absolute;
+    margin-top: 410px;
+    z-index: 15;
+    margin-left: 72px;
+    font-size: large;
+    font-weight: bolder;
+}
+.inv-botqr3{
+    background: none;
+    border: none;
+    position: absolute;
+    margin-top: 560px;
+    z-index: 20;
+    margin-left: -212px;
     font-size: large;
     font-weight: bolder;
 }
