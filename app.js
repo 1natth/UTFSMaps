@@ -19,7 +19,12 @@ exports.init ='/',function(req,res){
 app.get('/', function(res, res){
 
     res.setHeader('Content-type', HTML_CONTENT_TYPE);
-    const index=fs.readFile('/libreria/templates/paginas/home.html')
+    const index=fs.readFile('home.html')
+})
+app.get('home.html', function(res, res){
+
+    res.setHeader('Content-type', HTML_CONTENT_TYPE);
+    const index=fs.readFile('home.html')
 })
 
 const PORT = process.env.PORT || 4000
