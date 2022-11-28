@@ -9,7 +9,7 @@
     "main": "app.js",
     "scripts": {
         "dev": "nodemon app",
-        "start": "node"
+        "start": "npm start"
     },
     "dependencies": {
         "express": "^4.17.1",
