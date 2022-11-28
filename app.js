@@ -17,11 +17,11 @@ exports.init ='/',function(req,res){
 
 }
 app.get('/', (req, res)=> {
-    res.sendFile(__dirname + 'https://github.com/1natth/UTFSMaps/blob/master/libreria/templates/paginas/home.html')
+    res.sendFile(__dirname + '/libreria/templates/paginas/home.html')
 }) 
 
 app.get('/edificio_a', (req, res)=> {
-    res.sendFile(__dirname + 'https://github.com/1natth/UTFSMaps/blob/master/libreria/templates/paginas/ed_a.html')
+    res.sendFile(__dirname + '/libreria/templates/paginas/ed_a.html')
 })
 
 const PORT = process.env.PORT || 4000
