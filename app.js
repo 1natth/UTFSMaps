@@ -3,7 +3,7 @@ const fs=require('fs');
 const app = express();
 const HTML_CONTENT_TYPE="text/html";
 
-exports.init = function(req,res){
+exports.init =('/'),function(req,res){
     res.statusCode = 200;
     res.setHeader('Content-type', HTML_CONTENT_TYPE);
     const index=fs.readFile(`${__dirname}/../libreria/templates/paginas/home.html`, (err,data) =>{
@@ -13,10 +13,13 @@ exports.init = function(req,res){
         }else{
             res.end(data);
         }
-
     });
 
 }
+app.get('/home.html', function(res, res){
+
+    res.sendFile(home.html)
+})
 
 const PORT = process.env.PORT || 4000
 
