@@ -3,19 +3,6 @@ const fs=require('fs');
 const app = express();
 const HTML_CONTENT_TYPE="text/html";
 
-exports.init ='/',function(req,res){
-    res.statusCode = 200;
-    res.setHeader('Content-type', HTML_CONTENT_TYPE);
-    const index=fs.readFile(`${__dirname}/../libreria/templates/paginas/home.html`, (err,data) =>{
-        if(err){
-            console.log("Error en la carga del home.html");
-            res.end("Error en la carga del home.html")
-        }else{
-            res.end(data);
-        }
-    });
-
-}
 app.get('/', (req, res)=> {
     res.sendFile(__dirname + '/libreria/templates/paginas/home.html')
 }) 
@@ -47,4 +34,20 @@ app.listen(PORT, function(){
 
     console.log("Servidor UTFSMaps", PORT)
 })
+
+const setHeaders = (res, path, stats) => {
+    let mimeType = 'text/plain'; // formato por defecto (podemos escoger el que deseemos)
+    const lastPoint = path.split('').lastIndexOf('.');
+    const ext = path.substring(lastPoint + 1);
+    if(ext === 'html' || ext === 'htm') {
+        mimeType = 'text/html';
+    }
+    if(ext === 'css') {
+        mimeType = 'text/css';
+    }
+    if(ext === 'js') {
+        mimeType = 'application/javascript';
+    }
+    res.set('content-type', mimeType);
+}
 
