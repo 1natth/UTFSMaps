@@ -37,4 +37,5 @@ app.listen(PORT, function(){
 })
 
 app.use(express.static(__dirname+'/libreria/templates/paginas/css'));
+app.use(express.static(__dirname+'/libreria/static/app/js'));
 
