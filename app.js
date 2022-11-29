@@ -24,6 +24,21 @@ app.get('/edificio_a', (req, res)=> {
     res.sendFile(__dirname + '/libreria/templates/paginas/ed_a.html')
 })
 
+app.get('/edificio_b', (req, res)=> {
+    res.sendFile(__dirname + '/libreria/templates/paginas/ed_b.html')
+})
+
+app.get('/edificio_c', (req, res)=> {
+    res.sendFile(__dirname + '/libreria/templates/paginas/ed_c.html')
+})
+
+app.get('/edificio_e', (req, res)=> {
+    res.sendFile(__dirname + '/libreria/templates/paginas/ed_e.html')
+})
+
+app.get('/edificio_f', (req, res)=> {
+    res.sendFile(__dirname + '/libreria/templates/paginas/ed_f.html')
+})
 const PORT = process.env.PORT || 4000
 
 console.log({PORT})
