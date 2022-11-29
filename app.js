@@ -36,7 +36,6 @@ app.listen(PORT, function(){
     console.log("Servidor UTFSMaps", PORT)
 })
 
-app.use(express.static(__dirname+'/libreria/templates/paginas/css/bloque.css'));
-app.use(express.static(__dirname+'/libreria/templates/paginas/css/styles.css'));
+app.use(express.static(__dirname+'/libreria/templates/paginas/css'));
 app.use(express.static(__dirname+'/libreria/static/app/js'));
 
