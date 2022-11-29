@@ -2,6 +2,7 @@ const express = require('express');
 const fs=require('fs');
 const app = express();
 const HTML_CONTENT_TYPE="text/html";
+const http=require('http');
 
 app.get('/', (req, res)=> {
     res.sendFile(__dirname + '/libreria/templates/paginas/home.html')
@@ -35,19 +36,5 @@ app.listen(PORT, function(){
     console.log("Servidor UTFSMaps", PORT)
 })
 
-const setHeaders = (res, path, stats) => {
-    let mimeType = 'text/plain'; // formato por defecto (podemos escoger el que deseemos)
-    const lastPoint = path.split('').lastIndexOf('.');
-    const ext = path.substring(lastPoint + 1);
-    if(ext === 'html' || ext === 'htm') {
-        mimeType = 'text/html';
-    }
-    if(ext === 'css') {
-        mimeType = 'text/css';
-    }
-    if(ext === 'js') {
-        mimeType = 'application/javascript';
-    }
-    res.set('content-type', mimeType);
-}
+app.use(express.static(__dirname+'/libreria/templates/paginas/css'));
 
