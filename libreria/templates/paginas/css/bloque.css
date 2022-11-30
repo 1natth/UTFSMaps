@@ -56,10 +56,11 @@
     background: #069;
     padding: 4px;
     height: 80px;
-    margin-left: 1220px;
+    /*margin-left: 1220px;*/
     top: 7px;
     border-radius: 40px;
     z-index: 30;
+    right: 5%
 }
 .buscar_texto{
     display: flex;
